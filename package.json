@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Windows 记事本网页版",
   "scripts": {
-    "test": "grunt lint",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    
     "build": "grunt build"
   },
   "repository": {
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/DQH123456/jsnotepad#readme",
   "devDependencies": {
+    
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-concat": "^1.0.1",
