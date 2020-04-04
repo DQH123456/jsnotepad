@@ -10,7 +10,7 @@ var $dlgAbout = (function() {
             + '<div class="main notepad-dlg-main">'
               + '<h1 class="slogan">JSNotepad</h1>'
               + '<hr>'
-              + '<img class="app-logo" src="../../images/note.png" alt="JSNotepad">'
+              + '<img class="app-logo" src="../../images/notepad-icon-32.png" alt="JSNotepad">'
               + '<div class="info">'
                 + '<p>仓库地址：<a href="https://github.com/DQH123456/jsnotepad/" target="_blank">https://github.com/DQH123456/jsnotepad/</a></p>'
               + '</div>'
