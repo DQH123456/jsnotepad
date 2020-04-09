@@ -7,6 +7,7 @@ module.exports = function (grunt) {
       },
       src: ['*.html', './com/**/*.html']
     },
+    
     csslint: {
       options: {
         csslintrc: '.csslintrc'
