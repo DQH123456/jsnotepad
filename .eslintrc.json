@@ -1,35 +1,41 @@
 {
-    "env": {
+  "env": {
       "browser": true,
       "jquery": true
-    },
-    "extends": "eslint:recommended",
-    
-    "rules": {
+  },
+  "extends": "eslint:recommended",
+  "rules": {
       "indent": [
-        "error",
-        2,
-        {
-          "SwitchCase": 1,
-          "VariableDeclarator": {"var": 2, "let": 2, "const": 3}
-        }
+          "error",
+          2,
+          {
+              "SwitchCase": 1,
+              "VariableDeclarator": {
+                  "var": 2,
+                  "let": 2,
+                  "const": 3
+              }
+          }
       ],
       "linebreak-style": [
-        "error",
-        "unix"
+          "error",
+          "unix"
       ],
       "quotes": [
-        "error",
-        "single"
+          "error",
+          "single"
       ],
       "semi": [
-        "error",
-        "always"
+          "error",
+          "always"
       ],
       "no-console": [
-        "error",
-        { "allow": ["error"] }
+          "error",
+          {
+              "allow": [
+                  "error"
+              ]
+          }
       ]
-    }
   }
-  
+}
