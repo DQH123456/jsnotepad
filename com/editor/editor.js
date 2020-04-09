@@ -130,48 +130,6 @@ var $editor = (function() {
     cfg.posHandler(getRow(), getCol());
   }
 
-  function bingSearch() {
-    var start = $textArea[0].selectionStart,
-        end   = $textArea[0].selectionEnd;
-
-    if(start === end) {
-      window.open('https://cn.bing.com/', '_blank');
-    } else {
-      var subStr = $textArea.val().substring(start, end);
-      window.open('https://cn.bing.com/search?q=' + subStr, '_blank');
-    }
-  }
-
-  function search(srch) {
-    var content  = $textArea.val(),
-        srchCtnt = srch.content;
-
-    if(!srch.capitalSense) { // 不区分大小写，把所有字符串都转换成小写
-      content  = content.toLowerCase();
-      srchCtnt = srchCtnt.toLowerCase();
-    }
-
-    var start = $textArea[0].selectionEnd;
-    var result;
-
-    if(srch.direction === 'down') { // 查找方向，向下
-      result = content.indexOf(srchCtnt, start);
-    } else { // srch.direction === 'up'，查找方向，向上
-      var subStr = content.substr(0, $textArea[0].selectionStart);
-      result = subStr.lastIndexOf(srchCtnt);
-    }
-
-    if(result === -1) {
-      alert('找不到 "' + srch.content + '"');
-      return;
-    }
-
-    $textArea[0].selectionStart = result;
-    $textArea[0].selectionEnd = result + srchCtnt.length;
-
-    cfg.posHandler(getRow(), getCol());
-  }
-
   function show(conf) {
     $.extend(cfg, conf);
 
@@ -191,8 +149,6 @@ var $editor = (function() {
     selectAll: selectAll,
     insertDataTime: insertDataTime,
     gotoLn: gotoLn,
-    bingSearch: bingSearch,
-    search: search,
     setFont: setFont
   };
 }());
